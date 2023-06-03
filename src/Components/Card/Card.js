@@ -9,7 +9,7 @@ const Card = ({ movie }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
   }, []);
 
   return (

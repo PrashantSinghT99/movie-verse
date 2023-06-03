@@ -9,7 +9,6 @@
 .header__left {
     display: flex;
     align-items: center;
-
 }
 
 a {
@@ -32,3 +31,4 @@ a>span:hover {
     width: 200px;
     cursor: pointer;
 }
+

@@ -7,4 +7,5 @@
 html,body, #root,.App
 {
   min-height: 100%;
+  background:black;
 }
