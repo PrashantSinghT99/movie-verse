@@ -9,7 +9,7 @@ const Card = ({ movie }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 1500);
   }, []);
 
   return (
@@ -17,7 +17,7 @@ const Card = ({ movie }) => {
       {loading ? (
         <div className="skeleton">
           <SkeletonTheme color="#202020" highlightColor="#444">
-            <Skeleton height={200}/>
+            <Skeleton height={200} />
           </SkeletonTheme>
         </div>
       ) : (
@@ -28,9 +28,8 @@ const Card = ({ movie }) => {
           <div className="cards__container">
             <img
               className="card__img"
-              src={`https://image.tmdb.org/t/p/original${
-                movie ? movie.poster_path : ""
-              }`}
+              src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""
+                }`}
             />
             <div className="cards__overlay">
               <div className="card__title">
@@ -40,7 +39,7 @@ const Card = ({ movie }) => {
                 {movie ? movie.release_date : ""}
                 <span className="card__rating">
                   {movie ? movie.vote_average : ""}
-                  <i className="fas fa-star"/>
+                  <i className="fas fa-star" />
                 </span>
               </div>
               <div className="card__description">

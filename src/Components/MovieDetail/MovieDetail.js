@@ -67,7 +67,6 @@ const MovieDetail = () => {
 
             {/* links  */}
             <div className="movie__links">
-
                 {
                     currentMovieDetail && currentMovieDetail.homepage && <a href={currentMovieDetail.homepage} target="_blank" style={{ textDecoration: "none" }}><p><span className="movie__homeButton movie__Button">HOMEPAGE<i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }

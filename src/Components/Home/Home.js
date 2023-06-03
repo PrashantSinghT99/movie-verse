@@ -4,15 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import MovieList from '../MovieList/MovieList'
 import { Link } from "react-router-dom";
-import "../Styles/Home.css"
+import "../Styles/Home.css";
+import { MOVIE_API } from '../Constants/constant'
 
 const Home = () => {
     const [moviesArray, setMoviesArray] = useState([]);
-
     useEffect(() => {
-        fetch(
-            "https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US"
-        )
+        fetch(MOVIE_API)
             .then((res) => res.json())
             .then((data) => setMoviesArray(data.results));
     }, []);
@@ -24,7 +22,7 @@ const Home = () => {
                     showThumbs={false}
                     autoPlay={true}
                     interval={2000}
-                
+
                     infiniteLoop={true}
                     showStatus={false}
                 >

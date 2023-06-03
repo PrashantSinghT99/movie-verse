@@ -1,34 +1,32 @@
 .header {
-    margin: 0 2.5rem;
-    padding: .5rem 0;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 a {
-    text-decoration: "none";
+  text-decoration: "none";
 }
 
-a>span {
-    margin: 0 30px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: white;
+a > span {
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
 }
 
-a>span:hover {
-    color: #f5c518;
-
+a > span:hover {
+  color: #f5c518;
 }
 
 .header__icon {
-    width: 200px;
-    cursor: pointer;
+  width: 200px;
+  cursor: pointer;
 }
-

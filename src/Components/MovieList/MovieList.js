@@ -16,9 +16,7 @@ const MovieList = () => {
 
   const getData = () => {
     fetch(
-      `https://api.themoviedb.org/3/movie/${
-        page ? page : "popular"
-      }?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`
+      `https://api.themoviedb.org/3/movie/${page ? page : "popular"}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`
     )
       .then((res) => res.json())
       .then((data) => setPageMovieList(data.results));
@@ -29,9 +27,9 @@ const MovieList = () => {
       <h2 className="page__title">{(page ? page : "POPULAR").toUpperCase()}</h2>
       <div className="page__cards">
         {
-        pageMovieList.map(movie => (
-          <Card movie={movie} key={movie.id} />
-        ))
+          pageMovieList.map(movie => (
+            <Card movie={movie} key={movie.id} />
+          ))
         }
       </div>
     </div>
